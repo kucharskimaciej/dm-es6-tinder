@@ -1,14 +1,15 @@
 const JST = {};
 JST["PhotoTpl"] = (model) => `
 <div class="photo ${model.upvote ? 'upvoted' : ''}">
-    <img src="${model.url}" /><button action="upvote">Upvote</button>
+    <img src="${model.url}" />
+    <button action="upvote" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-ok"></i></button>
 </div>
 `;
 
 JST["AppTpl"] = () => `
-<figure>
+<figure class="text-center">
     <section photo></section>
-    <button action="next">NEXT</button>
+    <button action="next" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-arrow-right"></i></button>
 </figure>
 `
 

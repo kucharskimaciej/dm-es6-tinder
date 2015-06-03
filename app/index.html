@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <title>DevMeetings ES6 Application - Tinder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style>
+        .btn-circle {
+            width: 130px;
+            height: 130px;
+            text-align: center;
+            padding: 10px;
+            font-size: 80px;
+            line-height: 130px;
+            border-radius: 50%;
+        }
+        [action=next] {
+            position: relative;
+            top: -65px;
+        }
+
+        [action=upvote] {
+            position: absolute;
+            top: 50%;
+            margin-top: -65px;
+            margin-left: -65px;
+
+            opacity: 1;
+            transition: opactiy 1s;
+        }
+
+        .photo {
+            position: relative;
+        }
+
+        .photo img {
+            border: 10px solid rgba(0,0,0,0.2);
+        }
+
+        .upvoted img {
+            border: 10px solid #4CAE4C;
+        }
+
+        .upvoted [action=upvote] {
+            display: none;
+        }
+
+        .page-header small {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="page-header text-danger text-center">DevMeetings' Tinder</h1>
+    <h1 class="page-header text-danger text-center">tinder<small>by DevMeetings</small></h1>
 
     <div class="container">
         <div class="row">
