@@ -1,5 +1,5 @@
-# dm-es6-app-seed
-Application seed for the Devmeetings' ES6 app
+# DevMeetings' Tinder
+Example application for the DevMeetings' ES6 workshop
 
 ## Installation
 
